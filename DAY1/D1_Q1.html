@@ -1,0 +1,47 @@
+<html>
+<head></head>
+<body>
+<h3 >JavaScript Programming</h3>
+<hr/>
+<!-- Empno : 12645,  Ename  :  Scott,  Job : Manager, Salary :  45000 -->
+
+Empno :  <input type="text" id="t1"  />
+<br></br>
+Ename  :  <input type="text" id="t2"  />
+<br></br>
+Job :  <input type="text" id="t3"  />
+<br></br>
+Salary :  <input type="number" id="t4"  />
+<br></br>
+
+<input type="button" onclick="f1()"
+			value="Submit"  />	 	
+ </br>
+
+
+<script>
+	function  f1(){   
+       
+        
+        let b = document.getElementById("t1");
+        let c = document.getElementById("t2");
+        let e = document.getElementById("t3");
+        let d = document.getElementById("t4");
+
+        let Empno = b.value;
+        let Ename = c.value;
+        let Job = d.value;
+        let Salary = e.value;
+
+        a= "Empno :"+ Empno + ",  Ename  :"+Ename + ",  Job : " + Job + ", Salary :" +Salary;
+        alert("Check console log");
+        console.log(a);
+        
+        
+	 }
+</script>
+</body>
+</html>
+
+
+

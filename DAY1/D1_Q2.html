@@ -1,0 +1,73 @@
+<html>
+<head></head>
+<body>
+<h3 >JavaScript Programming</h3>
+<hr/>
+
+
+Product Type :  <input type="text" id="t1"  />
+<br></br>
+Unit Price  :  <input type="number" id="t2"  />
+<br></br>
+Quantity :  <input type="number" id="t3"  />
+<br></br>
+
+
+<input type="button" onclick="f1()"
+			value="Total Amount"  />	 
+
+ </br>
+<p id="a"></p>
+
+<script>
+	function  f1(){   
+       
+        let paraObj = document.getElementById("a")
+        let b = document.getElementById("t1");
+        let c = document.getElementById("t2");
+        let d = document.getElementById("t3");
+    
+        let PT = b.value;
+        let UP =  parseFloat(c.value);
+        let Quantity =  parseFloat(d.value);
+        let discount = 0;
+        let totalamount = 0;
+
+        
+        if(Quantity > 30){
+            discount= UP*Quantity*0.20;
+            totalamount = UP*Quantity - discount;
+            paraObj.innerHTML= "Total Amount : " + totalamount ;
+
+        }
+
+        else if(Quantity > 20){
+            discount= UP*Quantity*0.15;
+            totalamount = UP*Quantity - discount;
+            paraObj.innerHTML= "Total Amount : " + totalamount ;
+
+        }
+
+        else if(Quantity > 10){
+            discount= UP*Quantity*0.10;
+            totalamount = UP*Quantity - discount;
+            paraObj.innerHTML= "Total Amount : " + totalamount ;
+
+        }
+
+        else {
+            totalamount = UP*Quantity - discount;
+            paraObj.innerHTML= "Total Amount : " +  totalamount.toFixed(2);
+        }
+
+        
+        
+        
+        
+	 }
+</script>
+</body>
+</html>
+
+
+

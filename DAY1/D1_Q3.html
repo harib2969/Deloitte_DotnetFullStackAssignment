@@ -1,0 +1,76 @@
+<html>
+<head></head>
+<body>
+<h3 >JavaScript Programming</h3>
+<hr/>
+
+
+First Number :  
+<input type="number" id="t1"  />
+<br></br>
+Second Number :  
+<input type="number" id="t2"  />
+<br></br>
+
+<input type="button" onmouseover="f1()" value="ADD" />	 
+<input type="button" onmouseover="f2()" value="SUB" />
+<input type="button" onmouseover="f3()" value="MULTIPLY" />
+<input type="button" onmouseover="f4()" value="DIV" />
+ </br>
+<p id="p1"></p>
+
+<script>
+	function  f1(){   
+       
+        let paraObj = document.getElementById("p1");
+        let firstObj = document.getElementById("t1");
+        let secondObj = document.getElementById("t2");
+
+        let first = parseInt(firstObj.value);
+        let second = parseInt(secondObj.value);
+
+        let sumnum= first + second 
+        paraObj.innerHTML = "Result : " + sumnum;   
+    }
+    function  f2(){   
+       
+       let paraObj = document.getElementById("p1");
+       let firstObj = document.getElementById("t1");
+       let secondObj = document.getElementById("t2");
+
+       let first = parseInt(firstObj.value);
+       let second = parseInt(secondObj.value);
+
+       let sumnum= first - second 
+       paraObj.innerHTML = "Result : " + sumnum;   
+   }
+   function  f3(){   
+       
+       let paraObj = document.getElementById("p1");
+       let firstObj = document.getElementById("t1");
+       let secondObj = document.getElementById("t2");
+
+       let first = parseInt(firstObj.value);
+       let second = parseInt(secondObj.value);
+
+       let sumnum= first * second 
+       paraObj.innerHTML = "Result : " + sumnum;   
+   }
+   function  f4(){   
+       
+       let paraObj = document.getElementById("p1");
+       let firstObj = document.getElementById("t1");
+       let secondObj = document.getElementById("t2");
+
+       let first = parseInt(firstObj.value);
+       let second = parseInt(secondObj.value);
+
+       let sumnum= first / second 
+       paraObj.innerHTML = "Result : " + sumnum;   
+   }
+</script>
+</body>
+</html>
+
+
+
