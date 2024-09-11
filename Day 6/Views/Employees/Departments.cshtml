@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewData["Title"] = "Departments";
+
+}
+@model List<string>
+<h2>Departments</h2>
+<hr/>
+<ul>
+ @{
+        foreach (string s in Model)
+    {
+            <li><a asp-action="DepartmentEmployees" asp-route-dept="@s" >@s</a></li>
+    }
+}
+</ul>
